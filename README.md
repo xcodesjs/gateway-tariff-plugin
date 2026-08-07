@@ -12,9 +12,42 @@ and ocean freight forwarder, using the same tariff engine that prices our own sh
 /plugin install gateway-tariff-calculator
 ```
 
-On first use Claude opens a browser to sign in. Guests verify an email address and get
-10 lookups per week; Gateway freight customers sign in with their account for unlimited
-access. Nothing is pasted into a config file.
+## Access and sign-in
+
+The first time a tool runs, Claude opens your browser to a Gateway sign-in page. There are
+two ways through it, and you pick one at that screen.
+
+### Guest — 10 lookups per week, free
+
+Enter an email address. Gateway sends a 6-digit code, you enter it, and you are connected.
+No account, no card, nothing to set up.
+
+The limit is 10 answered lookups per rolling 7 days, counted per address. It is a rolling
+window, so the tenth lookup frees up exactly seven days after you made it, not at the end
+of a calendar week.
+
+Asking for candidate HTS codes does **not** count against it. When you give `landed_cost` a
+product description instead of a code, it returns candidates for you to confirm and charges
+nothing, because that is a question back to you rather than an answer.
+
+### Gateway freight customer — unlimited
+
+Choose **I ship with Gateway** and sign in with your app.gatewaylines.com account. The
+weekly limit comes off entirely. The platform comes with the freight; Gateway earns on the
+container, so the tools are not a subscription.
+
+Not a customer yet? [Get a rate](https://gatewaylines.com/quote).
+
+### How the sign-in works
+
+Standard OAuth 2.1. Claude registers itself with Gateway automatically, sends you to the
+browser to approve, and receives a scoped token. You never paste a key, a token, or a
+header into a config file, and Gateway never sees a password you typed into Claude.
+
+The token is scoped to the three read-only tariff tools and nothing else. Access tokens
+expire after an hour and refresh silently. Disconnect from your AI assistant at any time to
+stop it refreshing, or email privacy@gatewaylines.com to have outstanding tokens revoked
+immediately.
 
 ## Tools
 
