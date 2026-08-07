@@ -93,6 +93,14 @@ or to request access, correction or deletion of your data.
 
 <https://help.gatewaylines.com>
 
-## License
+## License and ownership
 
-MIT. See [LICENSE](LICENSE).
+This repository contains only the plugin configuration: a manifest, a pointer to the
+hosted server, and this documentation. There is no application code here.
+
+The Gateway Tariff Calculator service, its tariff engine, and its underlying data are
+proprietary to Gateway Lines and are **not** open source. You may use and redistribute the
+configuration in this repository in order to connect to the service. Use of the service
+itself is governed by <https://gatewaylines.com/terms>.
+
+See [LICENSE](LICENSE) for the exact scope.

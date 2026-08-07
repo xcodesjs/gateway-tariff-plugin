@@ -9,7 +9,15 @@
   },
   "homepage": "https://tariff.gatewaylines.com/mcp",
   "repository": "https://github.com/xcodesjs/gateway-tariff-plugin",
-  "license": "MIT",
-  "keywords": ["tariff", "customs", "hts", "import-duty", "trade-policy", "logistics", "freight"],
+  "license": "SEE LICENSE",
+  "keywords": [
+    "tariff",
+    "customs",
+    "hts",
+    "import-duty",
+    "trade-policy",
+    "logistics",
+    "freight"
+  ],
   "mcpServers": "./.mcp.json"
 }
