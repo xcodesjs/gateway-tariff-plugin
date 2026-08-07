@@ -1,0 +1,15 @@
+{
+  "name": "gateway-tariff-calculator",
+  "displayName": "Gateway Tariff Calculator",
+  "version": "1.0.0",
+  "description": "US import duty, HTS classification and trade policy changes, from a live tariff engine with citations.",
+  "author": {
+    "name": "Gateway Lines",
+    "url": "https://gatewaylines.com"
+  },
+  "homepage": "https://tariff.gatewaylines.com/mcp",
+  "repository": "https://github.com/xcodesjs/gateway-tariff-plugin",
+  "license": "MIT",
+  "keywords": ["tariff", "customs", "hts", "import-duty", "trade-policy", "logistics", "freight"],
+  "mcpServers": "./.mcp.json"
+}
