@@ -8,13 +8,27 @@ and ocean freight forwarder, using the same tariff engine that prices our own sh
 
 ## Install
 
+**Claude Code**
+
 ```
 /plugin install gateway-tariff-calculator
 ```
 
+**Gemini CLI**
+
+```
+gemini extensions install https://github.com/xcodesjs/gateway-tariff-plugin
+```
+
+**Any other MCP client**
+
+Point it at `https://mcp.gatewaylines.com` and sign in when prompted. Claude and ChatGPT
+both discover the sign-in automatically; see
+[the setup guide](https://tariff.gatewaylines.com/mcp) for per-client steps.
+
 ## Access and sign-in
 
-The first time a tool runs, Claude opens your browser to a Gateway sign-in page. There are
+The first time a tool runs, your client opens a browser to a Gateway sign-in page. There are
 two ways through it, and you pick one at that screen.
 
 ### Guest — 10 lookups per week, free

@@ -1,0 +1,10 @@
+{
+  "name": "gateway-tariff-calculator",
+  "version": "1.0.0",
+  "description": "US import duty, HTS classification and trade policy changes, from a live tariff engine with citations. Built by Gateway Lines, an FMC-licensed NVOCC.",
+  "mcpServers": {
+    "gateway-tariff": {
+      "httpUrl": "https://mcp.gatewaylines.com"
+    }
+  }
+}
